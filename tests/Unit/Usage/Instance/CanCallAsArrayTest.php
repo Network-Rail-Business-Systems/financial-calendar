@@ -1,9 +1,9 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests\Unit\Usage\Instance;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Usage\Instance;
 
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
-use NRBusinessSystems\FinancialCalendar\Tests\TestCase;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestCase;
 
 class CanCallAsArrayTest extends TestCase
 {

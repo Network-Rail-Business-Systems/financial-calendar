@@ -1,11 +1,11 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests\Unit\Calculation\WeekInPeriod;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Calculation\WeekInPeriod;
 
 use Carbon\Carbon;
 use ErrorException;
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
-use NRBusinessSystems\FinancialCalendar\Tests\TestDates;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestDates;
 
 class CanCalculateWeekInPeriodTest extends TestDates
 {

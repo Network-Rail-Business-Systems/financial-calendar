@@ -1,13 +1,13 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Traits;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
 
 /**
  * Add query scopes to Eloquent models where the year and period are not already stored
- * @package NRBusinessSystems\FinancialCalendar\Traits
+ * @package NetworkRailBusinessSystems\FinancialCalendar\Traits
  */
 trait HasFinancialDates
 {

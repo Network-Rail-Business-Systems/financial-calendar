@@ -1,10 +1,10 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests\Unit\Calculation\Year;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Calculation\Year;
 
 use ErrorException;
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
-use NRBusinessSystems\FinancialCalendar\Tests\TestDates;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestDates;
 
 class CanCalculateYearTest extends TestDates
 {

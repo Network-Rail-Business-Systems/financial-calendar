@@ -1,6 +1,6 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

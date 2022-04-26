@@ -1,9 +1,9 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Providers;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Providers;
 
-use NRBusinessSystems\FinancialCalendar\Facades\FinancialCalendarFacade;
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\Facades\FinancialCalendarFacade;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
 use Illuminate\Support\ServiceProvider;
 
 class FinancialCalendarServiceProvider extends ServiceProvider

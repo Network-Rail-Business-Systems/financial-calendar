@@ -1,11 +1,11 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests\Unit\Getters\GetPeriodEnd;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Getters\GetPeriodEnd;
 
 use Carbon\Carbon;
 use ErrorException;
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
-use NRBusinessSystems\FinancialCalendar\Tests\TestDates;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestDates;
 
 class WillCalculatePeriodEndDateTest extends TestDates
 {

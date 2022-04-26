@@ -1,10 +1,10 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests\Unit\Getters\GetYearStart;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Getters\GetYearStart;
 
 use Carbon\Carbon;
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
-use NRBusinessSystems\FinancialCalendar\Tests\TestDates;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestDates;
 
 class WillCalculateYearStartDateTest extends TestDates
 {

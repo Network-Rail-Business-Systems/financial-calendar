@@ -1,10 +1,10 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests\Unit\Calculation\WeekInYear;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Calculation\WeekInYear;
 
 use ErrorException;
-use NRBusinessSystems\FinancialCalendar\FinancialCalendar;
-use NRBusinessSystems\FinancialCalendar\Tests\TestDates;
+use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
+use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestDates;
 
 class CanCalculateWeekInYearTest extends TestDates
 {

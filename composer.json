@@ -1,13 +1,13 @@
 {
-    "name": "nrbusinesssystems/financial-calendar",
+    "name": "networkrailbusinesssystems/financial-calendar",
     "description": "Calculate the exact financial calendar period, week, quarter, and year, for any given date",
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Anthony Edmonds",
             "email": "anthony.edmonds@networkrail.co.uk",
-            "role" : "Business Systems Developer"
+            "role" : "Senior Business Systems Developer"
         }
     ],
     "minimum-stability": "dev",
@@ -22,24 +22,24 @@
     },
     "autoload" : {
         "psr-4" : {
-            "NRBusinessSystems\\FinancialCalendar\\" : "src/",
-            "NRBusinessSystems\\FinancialCalendar\\Facades\\": "src/app/Facades/",
-            "NRBusinessSystems\\FinancialCalendar\\Providers\\": "src/app/Providers/",
-            "NRBusinessSystems\\FinancialCalendar\\Traits\\": "src/app/Traits/"
+            "NetworkRailBusinessSystems\\FinancialCalendar\\" : "src/",
+            "NetworkRailBusinessSystems\\FinancialCalendar\\Facades\\": "src/app/Facades/",
+            "NetworkRailBusinessSystems\\FinancialCalendar\\Providers\\": "src/app/Providers/",
+            "NetworkRailBusinessSystems\\FinancialCalendar\\Traits\\": "src/app/Traits/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NRBusinessSystems\\FinancialCalendar\\Tests\\": "tests/"
+            "NetworkRailBusinessSystems\\FinancialCalendar\\Tests\\": "tests/"
         }
     },
     "extra" : {
         "laravel" : {
             "providers" : [
-                "NRBusinessSystems\\FinancialCalendar\\Providers\\FinancialCalendarServiceProvider"
+                "NetworkRailBusinessSystems\\FinancialCalendar\\Providers\\FinancialCalendarServiceProvider"
             ],
             "aliases" : {
-                "FinancialCalendar" : "NRBusinessSystems\\FinancialCalendar\\Facades\\FinancialCalendarFacade"
+                "FinancialCalendar" : "NetworkRailBusinessSystems\\FinancialCalendar\\Facades\\FinancialCalendarFacade"
             }
         }
     },

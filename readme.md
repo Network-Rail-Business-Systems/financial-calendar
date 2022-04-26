@@ -2,31 +2,13 @@
 Calculate the exact financial year, week-in-year, quarter, period, and week-in-period for any given date according to the Network Rail financial calendar.
 
 ## Installation
-Financial Calendar may be used as a standalone class or as part of a Laravel project. Both Service Provider and Facade options are provided.
 
-### Requirements
+Financial Calendar may be used as a standalone class or as part of a Laravel project. Both Service Provider and Facade options are provided.
 
 * PHP ^8
 * Nesbot/Carbon ^2
 
-### Composer
-You can add Financial Calendar to your project by including the following in your `composer.json` file. 
-
-```json
-{
-     "require" : {
-         "nrbusinesssystems/financial-calendar" : "^3"
-     },
-     "repositories" : {
-         {
-             "type" : "vcs",
-             "url" : "git@bitbucket.org:nrbusinesssystems/financial-calendar.git"
-         }
-     }
- }
-```
-
-Remember to add an *Access Key* to the repository if you are utilising BitBucket Pipelines.
+You may include the library in your project using: `composer required networkrailbusinesssystems/financial-calendar`.
 
 ## Usage
 The Financial Calendar class may be directly included or called through the Laravel service provider.

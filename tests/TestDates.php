@@ -1,8 +1,8 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests;
 
-use NRBusinessSystems\FinancialCalendar\Tests\Data\FinancialDates;
+use NetworkRailBusinessSystems\FinancialCalendar\Tests\Data\FinancialDates;
 
 abstract class TestDates extends TestCase
 {

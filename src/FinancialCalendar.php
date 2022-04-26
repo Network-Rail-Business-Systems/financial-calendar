@@ -1,6 +1,6 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar;
+namespace NetworkRailBusinessSystems\FinancialCalendar;
 
 use Carbon\Carbon;
 use DateTime;

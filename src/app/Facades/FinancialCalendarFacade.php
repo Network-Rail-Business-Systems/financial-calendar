@@ -1,5 +1,5 @@
 <?php
-namespace NRBusinessSystems\FinancialCalendar\Facades;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

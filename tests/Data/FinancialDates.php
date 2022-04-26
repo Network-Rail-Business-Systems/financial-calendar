@@ -1,6 +1,6 @@
 <?php
 
-namespace NRBusinessSystems\FinancialCalendar\Tests\Data;
+namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Data;
 
 class FinancialDates
 {
