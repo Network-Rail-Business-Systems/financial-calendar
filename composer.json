@@ -1,0 +1,51 @@
+{
+    "name": "nrbusinesssystems/financial-calendar",
+    "description": "Calculate the exact financial calendar period, week, quarter, and year, for any given date",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Anthony Edmonds",
+            "email": "anthony.edmonds@networkrail.co.uk",
+            "role" : "Business Systems Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8",
+        "nesbot/carbon": "^2"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1",
+        "illuminate/support": "9.x-dev",
+        "phpunit/phpunit": "^9"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "NRBusinessSystems\\FinancialCalendar\\" : "src/",
+            "NRBusinessSystems\\FinancialCalendar\\Facades\\": "src/app/Facades/",
+            "NRBusinessSystems\\FinancialCalendar\\Providers\\": "src/app/Providers/",
+            "NRBusinessSystems\\FinancialCalendar\\Traits\\": "src/app/Traits/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NRBusinessSystems\\FinancialCalendar\\Tests\\": "tests/"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "NRBusinessSystems\\FinancialCalendar\\Providers\\FinancialCalendarServiceProvider"
+            ],
+            "aliases" : {
+                "FinancialCalendar" : "NRBusinessSystems\\FinancialCalendar\\Facades\\FinancialCalendarFacade"
+            }
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
