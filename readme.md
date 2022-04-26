@@ -8,7 +8,7 @@ Financial Calendar may be used as a standalone class or as part of a Laravel pro
 * PHP ^8
 * Nesbot/Carbon ^2
 
-You may include the library in your project using: `composer required networkrailbusinesssystems/financial-calendar`.
+You may include the library in your project using: `composer require networkrailbusinesssystems/financial-calendar`.
 
 ## Usage
 The Financial Calendar class may be directly included or called through the Laravel service provider.
