@@ -14,11 +14,11 @@ class SetWeekEndTest extends TestCase
     {
         $calendar = new FinancialCalendar();
         $calendar->setWeekEnd($end);
-        
+
         $this->assertEquals($start, $calendar->dayWeekStarts);
         $this->assertEquals($end, $calendar->dayWeekEnds);
     }
-    
+
     public static function dates(): array
     {
         return [

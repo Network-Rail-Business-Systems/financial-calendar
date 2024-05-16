@@ -11,7 +11,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 class SetDateTest extends TestCase
 {
     protected Carbon $now;
-    
+
     protected function setUp(): void
     {
         parent::setUp();
@@ -25,7 +25,7 @@ class SetDateTest extends TestCase
     {
         $calendar = new FinancialCalendar();
         $calendar->setDate($date, $format);
-        
+
         $this->assertEquals(
             $this->now,
             $calendar->date,
@@ -35,7 +35,7 @@ class SetDateTest extends TestCase
     public static function dates(): array
     {
         $now = Carbon::create(2024, 7, 19, 12, 32, 05);
-        
+
         return [
             'String' => ['date' => $now->toIso8601String(), 'format' => null],
             'String with format' => ['date' => $now->format('d/m/Y H:i:s'), 'format' => 'd/m/Y H:i:s'],

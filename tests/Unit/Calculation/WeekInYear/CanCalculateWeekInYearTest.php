@@ -15,7 +15,7 @@ class CanCalculateWeekInYearTest extends TestDates
 
         $this->assertEquals($weekInYear + 3, FinancialCalendar::weekInYear($end), "End date $end failed");
     }
-    
+
     public function testHandlesAdjustedWeekLength(): void
     {
         $calendar = new FinancialCalendar();
@@ -24,7 +24,7 @@ class CanCalculateWeekInYearTest extends TestDates
                 16 => 6,
             ],
         ]);
-        
+
         $calendar->setDate('2024-07-19');
         $this->assertEquals(16, $calendar->weekInYear);
 

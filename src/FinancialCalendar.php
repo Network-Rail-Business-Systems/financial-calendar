@@ -67,10 +67,10 @@ class FinancialCalendar
     {
         return match ($key) {
             'date' => $this->getDate(),
-            
+
             'dwe',
             'dayWeekEnds' => $this->dayWeekEnds,
-            
+
             'dws',
             'dayWeekStarts' => $this->dayWeekStarts,
 
