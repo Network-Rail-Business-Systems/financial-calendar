@@ -13,8 +13,21 @@ class WillCalculateYearStartDateTest extends TestDates
     public function test(string $start, string $end, int $year, int $quarter, int $period, int $weekInYear): void
     {
         $this->assertEquals(
-            Carbon::create($year, 4, 1),
+            Carbon::create($year, 4),
             FinancialCalendar::startDateForYear($year)
+        );
+    }
+    
+    public function testOverridesYearStart(): void
+    {
+        $calendar = new FinancialCalendar();
+        $calendar->setYearStartOverrides([
+            2024 => [7, 19],
+        ]);
+        
+        $this->assertEquals(
+            Carbon::create(2024, 7, 19),
+            $calendar->getYearStart(2024),
         );
     }
 }

@@ -1,4 +1,10 @@
 # Financial Calendar
+
+![Composer status](.github/composer.svg)
+![Coverage status](.github/coverage.svg)
+![PHP version](.github/php.svg)
+![Tests status](.github/tests.svg)
+
 Calculate the exact financial year, week-in-year, quarter, period, and week-in-period for any given date according to the Network Rail financial calendar.
 
 ## Installation
@@ -129,8 +135,10 @@ You may utilise the calendar as an instanced or static class, and some commands 
 | asObject              |                  | stdClass          |        |
 
 | Property       | Type   |
-| -------------- | ------ |
+|----------------|--------|
 | date           | Carbon |
+| dayWeekEnds    | int    |
+| dayWeekStarts  | int    |
 | year           | int    |
 | weekInYear     | int    |
 | quarter        | int    |

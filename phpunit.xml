@@ -16,7 +16,19 @@
   </php>
   <source>
     <include>
-      <directory suffix=".php">./app</directory>
+      <directory suffix=".php">./src</directory>
     </include>
+    <exclude>
+      <directory>./src/app</directory>
+    </exclude>
   </source>
+  <coverage>
+    <report>
+      <html outputDirectory=".phpunit.cache/html" />
+      <text outputFile=".phpunit.cache/coverage.txt" showUncoveredFiles="false" showOnlySummary="true" />
+    </report>
+  </coverage>
+  <logging>
+    <junit outputFile=".phpunit.cache/tests.xml" />
+  </logging>
 </phpunit>

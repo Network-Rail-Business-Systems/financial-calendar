@@ -19,6 +19,7 @@
         "fakerphp/faker": "^1",
         "illuminate/support": "^11",
         "laravel/pint": "^1",
+        "networkrailbusinesssystems/badges": "^1",
         "phpstan/phpstan": "^2",
         "phpunit/phpunit": "^11"
     },
