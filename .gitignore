@@ -1,5 +1,5 @@
 .git
 .idea
 .phpunit.result.cache
-/vendor/
-/.phpunit.cache
+vendor
+.phpunit.cache
