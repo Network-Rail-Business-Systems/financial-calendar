@@ -7,3 +7,4 @@ jobs:
     uses: network-rail-business-systems/workflows/.github/workflows/unit-tests.yml@main
     with:
       php: '8.3'
+      npm: false
