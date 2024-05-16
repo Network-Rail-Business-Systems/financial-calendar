@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon",
+    "pint": "vendor/bin/pint",
+    "prepare": "husky",
+    "test": "vendor/bin/phpunit"
+  },
+  "dependencies": {
+    "husky": "^9"
+  }
+}
