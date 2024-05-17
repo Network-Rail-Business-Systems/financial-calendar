@@ -3,22 +3,13 @@
 namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Getters\GetPeriodEnd;
 
 use Carbon\Carbon;
-use ErrorException;
 use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
 use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestDates;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 class WillCalculatePeriodEndDateTest extends TestDates
 {
-    /**
-     * @dataProvider dates
-     * @param string $start
-     * @param string $end
-     * @param int $year
-     * @param int $quarter
-     * @param int $period
-     * @param int $weekInYear
-     * @throws ErrorException
-     */
+    #[DataProvider('dates')]
     public function test(string $start, string $end, int $year, int $quarter, int $period, int $weekInYear): void
     {
         $this->assertEquals(

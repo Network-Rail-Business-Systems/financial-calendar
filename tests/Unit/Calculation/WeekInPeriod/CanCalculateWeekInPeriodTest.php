@@ -3,28 +3,19 @@
 namespace NetworkRailBusinessSystems\FinancialCalendar\Tests\Unit\Calculation\WeekInPeriod;
 
 use Carbon\Carbon;
-use ErrorException;
 use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
 use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestDates;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 class CanCalculateWeekInPeriodTest extends TestDates
 {
-    /**
-     * @dataProvider dates
-     * @param string $start
-     * @param string $end
-     * @param int $year
-     * @param int $quarter
-     * @param int $period
-     * @param int $weekInYear
-     * @throws ErrorException
-     */
+    #[DataProvider('dates')]
     public function test(string $start, string $end, int $year, int $quarter, int $period, int $weekInYear): void
     {
         $start = Carbon::parse($start);
-        
+
         $this->assertEquals(1, FinancialCalendar::weekInPeriod($start), "Start date $start failed");
-        
+
         // TODO Could be a juicy way to revise the week calculation!
         $next = Carbon::parse($start)->next(Carbon::SUNDAY);
         if ($start->diffInDays($next) < 5) {

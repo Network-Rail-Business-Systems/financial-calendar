@@ -9,6 +9,6 @@ class CanCallWeekInYearTest extends TestCase
 {
     public function test()
     {
-        $this->assertIsInt(FinancialCalendar::weekInYear('2017-04-03') );
+        $this->assertIsInt(FinancialCalendar::weekInYear('2017-04-03'));
     }
 }

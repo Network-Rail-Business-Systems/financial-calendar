@@ -2,9 +2,9 @@
 
 namespace NetworkRailBusinessSystems\FinancialCalendar\Providers;
 
+use Illuminate\Support\ServiceProvider;
 use NetworkRailBusinessSystems\FinancialCalendar\Facades\FinancialCalendarFacade;
 use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
-use Illuminate\Support\ServiceProvider;
 
 class FinancialCalendarServiceProvider extends ServiceProvider
 {
@@ -15,8 +15,7 @@ class FinancialCalendarServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        $this->app->singleton('FinancialCalendar', function()
-        {
+        $this->app->singleton('FinancialCalendar', function () {
             return new FinancialCalendar;
         });
 
