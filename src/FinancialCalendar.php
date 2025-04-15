@@ -163,28 +163,28 @@ class FinancialCalendar
 
     public static function startDateForYear(int $year): Carbon
     {
-        $calendar = new FinancialCalendar();
+        $calendar = new FinancialCalendar;
 
         return $calendar->getYearStart($year);
     }
 
     public static function endDateForYear(int $year): Carbon
     {
-        $calendar = new FinancialCalendar();
+        $calendar = new FinancialCalendar;
 
         return $calendar->getYearEnd($year);
     }
 
     public static function startDateForPeriod(int $year, int $period): Carbon
     {
-        $calendar = new FinancialCalendar();
+        $calendar = new FinancialCalendar;
 
         return $calendar->getPeriodStart($year, $period);
     }
 
     public static function endDateForPeriod(int $year, int $period): Carbon
     {
-        $calendar = new FinancialCalendar();
+        $calendar = new FinancialCalendar;
 
         return $calendar->getPeriodEnd($year, $period);
     }

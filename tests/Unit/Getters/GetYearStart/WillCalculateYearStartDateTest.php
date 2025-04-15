@@ -18,9 +18,9 @@ class WillCalculateYearStartDateTest extends TestDates
         );
     }
 
-    public function testOverridesYearStart(): void
+    public function test_overrides_year_start(): void
     {
-        $calendar = new FinancialCalendar();
+        $calendar = new FinancialCalendar;
         $calendar->setYearStartOverrides([
             2024 => [7, 19],
         ]);
