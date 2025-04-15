@@ -7,7 +7,7 @@ use NetworkRailBusinessSystems\FinancialCalendar\Tests\TestCase;
 
 class ModuloTest extends TestCase
 {
-    public function test_calculates_remainder(): void
+    public function testCalculatesRemainder(): void
     {
         $calendar = new FinancialCalendar();
 

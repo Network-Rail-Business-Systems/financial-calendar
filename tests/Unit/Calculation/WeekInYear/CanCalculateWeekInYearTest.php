@@ -16,7 +16,7 @@ class CanCalculateWeekInYearTest extends TestDates
         $this->assertEquals($weekInYear + 3, FinancialCalendar::weekInYear($end), "End date $end failed");
     }
 
-    public function test_handles_adjusted_week_length(): void
+    public function testHandlesAdjustedWeekLength(): void
     {
         $calendar = new FinancialCalendar();
         $calendar->setWeekLengthOverrides([

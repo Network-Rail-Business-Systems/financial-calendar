@@ -10,7 +10,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 class SetWeekEndTest extends TestCase
 {
     #[DataProvider('dates')]
-    public function test_sets_week_end(int $start, int $end): void
+    public function testSetsWeekEnd(int $start, int $end): void
     {
         $calendar = new FinancialCalendar();
         $calendar->setWeekEnd($end);

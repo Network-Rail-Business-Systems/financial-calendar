@@ -21,7 +21,7 @@ class SetDateTest extends TestCase
     }
 
     #[DataProvider('dates')]
-    public function test_sets_from_string(string|int|DateTime|Carbon $date, ?string $format): void
+    public function testSetsFromString(string|int|DateTime|Carbon $date, ?string $format): void
     {
         $calendar = new FinancialCalendar();
         $calendar->setDate($date, $format);
