@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon",
-    "pint": "vendor/bin/pint",
+    "pint": "vendor/bin/pint --preset=per",
     "prepare": "husky",
     "test": "vendor/bin/phpunit"
   },
