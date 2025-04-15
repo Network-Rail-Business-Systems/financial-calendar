@@ -18,7 +18,7 @@ class CanCalculateWeekInYearTest extends TestDates
 
     public function test_handles_adjusted_week_length(): void
     {
-        $calendar = new FinancialCalendar;
+        $calendar = new FinancialCalendar();
         $calendar->setWeekLengthOverrides([
             2024 => [
                 16 => 6,

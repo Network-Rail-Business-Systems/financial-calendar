@@ -11,7 +11,7 @@ class CanCreateInstanceTest extends TestCase
     {
         $this->assertInstanceOf(
             FinancialCalendar::class,
-            new FinancialCalendar('2017-04-03')
+            new FinancialCalendar('2017-04-03'),
         );
     }
 }

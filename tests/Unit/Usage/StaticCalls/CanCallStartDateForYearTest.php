@@ -12,7 +12,7 @@ class CanCallStartDateForYearTest extends TestCase
     {
         $this->assertInstanceOf(
             Carbon::class,
-            FinancialCalendar::startDateForYear(2017)
+            FinancialCalendar::startDateForYear(2017),
         );
     }
 }

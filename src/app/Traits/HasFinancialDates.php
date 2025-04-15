@@ -19,7 +19,7 @@ trait HasFinancialDates
             [
                 FinancialCalendar::startDateForYear($year),
                 FinancialCalendar::endDateForYear($year),
-            ]
+            ],
         );
     }
 
@@ -30,7 +30,7 @@ trait HasFinancialDates
             [
                 FinancialCalendar::startDateForPeriod($year, $period),
                 FinancialCalendar::endDateForPeriod($year, $period),
-            ]
+            ],
         );
     }
 }

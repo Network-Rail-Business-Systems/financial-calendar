@@ -13,7 +13,7 @@ class CanCallSetWeekLengthOverridesTest extends TestCase
 
         $this->assertInstanceOf(
             FinancialCalendar::class,
-            $calendar->setWeekLengthOverrides([2019 => [1 => 13]])
+            $calendar->setWeekLengthOverrides([2019 => [1 => 13]]),
         );
     }
 }

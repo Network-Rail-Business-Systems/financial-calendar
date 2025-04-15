@@ -14,7 +14,7 @@ class WillCalculatePeriodStartDateTest extends TestDates
     {
         $this->assertEquals(
             Carbon::parse($start),
-            FinancialCalendar::startDateForPeriod($year, $period)
+            FinancialCalendar::startDateForPeriod($year, $period),
         );
     }
 }

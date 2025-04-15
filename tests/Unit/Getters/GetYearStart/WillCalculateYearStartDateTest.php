@@ -14,13 +14,13 @@ class WillCalculateYearStartDateTest extends TestDates
     {
         $this->assertEquals(
             Carbon::create($year, 4),
-            FinancialCalendar::startDateForYear($year)
+            FinancialCalendar::startDateForYear($year),
         );
     }
 
     public function test_overrides_year_start(): void
     {
-        $calendar = new FinancialCalendar;
+        $calendar = new FinancialCalendar();
         $calendar->setYearStartOverrides([
             2024 => [7, 19],
         ]);

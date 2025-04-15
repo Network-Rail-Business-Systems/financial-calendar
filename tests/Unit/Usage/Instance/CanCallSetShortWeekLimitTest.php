@@ -13,7 +13,7 @@ class CanCallSetShortWeekLimitTest extends TestCase
 
         $this->assertInstanceOf(
             FinancialCalendar::class,
-            $calendar->setShortWeekLimit(5)
+            $calendar->setShortWeekLimit(5),
         );
     }
 }
