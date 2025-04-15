@@ -7,6 +7,6 @@
     "test": "vendor/bin/phpunit"
   },
   "dependencies": {
-    "husky": "^9"
+    "husky": "^8"
   }
 }
