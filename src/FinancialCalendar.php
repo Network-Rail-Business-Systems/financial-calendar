@@ -56,7 +56,7 @@ class FinancialCalendar
     // Construction
     public function __construct(string|int|Carbon|DateTime|null $date = null, ?string $format = null)
     {
-        $this->calendar = new Carbon;
+        $this->calendar = new Carbon();
 
         if ($date !== null) {
             $this->setDate($date, $format);

@@ -12,7 +12,7 @@ class CanCallEndDateForPeriodTest extends TestCase
     {
         $this->assertInstanceOf(
             Carbon::class,
-            FinancialCalendar::endDateForPeriod(2017, 2)
+            FinancialCalendar::endDateForPeriod(2017, 2),
         );
     }
 }

@@ -13,7 +13,7 @@ class CanCallSetYearStartOverridesTest extends TestCase
 
         $this->assertInstanceOf(
             FinancialCalendar::class,
-            $calendar->setYearStartOverrides([2019 => [3, 15]])
+            $calendar->setYearStartOverrides([2019 => [3, 15]]),
         );
     }
 }

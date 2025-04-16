@@ -21,7 +21,7 @@ class CanFluentlyChainTest extends TestCase
                 ->setYearStartOverrides([2019 => [3, 12]])
                 ->recalculate()
                 ->nextPeriod()
-                ->nextWeek()
+                ->nextWeek(),
         );
     }
 }

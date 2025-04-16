@@ -11,6 +11,6 @@ class CanGetWeekInPeriodTest extends TestCase
     {
         $calendar = new FinancialCalendar('2017-03-04');
 
-        $this->assertIsInt($calendar->period);
+        $this->assertEquals(4, $calendar->weekInPeriod);
     }
 }

@@ -14,7 +14,7 @@ class WillCalculateYearStartDateTest extends TestDates
     {
         $this->assertEquals(
             Carbon::create($year, 4),
-            FinancialCalendar::startDateForYear($year)
+            FinancialCalendar::startDateForYear($year),
         );
     }
 

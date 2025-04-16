@@ -11,7 +11,7 @@ class CanCallGetTest extends TestCase
     {
         $this->assertInstanceOf(
             FinancialCalendar::class,
-            FinancialCalendar::now()
+            FinancialCalendar::now(),
         );
     }
 }

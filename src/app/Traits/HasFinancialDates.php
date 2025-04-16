@@ -2,7 +2,7 @@
 
 namespace NetworkRailBusinessSystems\FinancialCalendar\Traits;
 
-use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Contracts\Database\Eloquent\Builder;
 use NetworkRailBusinessSystems\FinancialCalendar\FinancialCalendar;
 
 /**
@@ -19,7 +19,7 @@ trait HasFinancialDates
             [
                 FinancialCalendar::startDateForYear($year),
                 FinancialCalendar::endDateForYear($year),
-            ]
+            ],
         );
     }
 
@@ -30,7 +30,7 @@ trait HasFinancialDates
             [
                 FinancialCalendar::startDateForPeriod($year, $period),
                 FinancialCalendar::endDateForPeriod($year, $period),
-            ]
+            ],
         );
     }
 }

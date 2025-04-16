@@ -16,7 +16,7 @@ class WillMoveToNextPeriodTest extends TestDates
         $calendar->nextPeriod();
         $this->assertEquals(
             $period === FinancialCalendar::PERIODS_PER_YEAR ? 1 : $period + 1,
-            $calendar->period
+            $calendar->period,
         );
     }
 }

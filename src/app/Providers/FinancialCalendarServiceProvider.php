@@ -16,7 +16,7 @@ class FinancialCalendarServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->singleton('FinancialCalendar', function () {
-            return new FinancialCalendar;
+            return new FinancialCalendar();
         });
 
         $this->app->alias('FinancialCalendar', FinancialCalendarFacade::class);

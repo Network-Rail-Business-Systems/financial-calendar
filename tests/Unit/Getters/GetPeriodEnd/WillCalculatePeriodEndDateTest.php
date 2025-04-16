@@ -14,7 +14,7 @@ class WillCalculatePeriodEndDateTest extends TestDates
     {
         $this->assertEquals(
             Carbon::parse($end),
-            FinancialCalendar::endDateForPeriod($year, $period)
+            FinancialCalendar::endDateForPeriod($year, $period),
         );
     }
 }
